@@ -45,7 +45,7 @@ const Hero = () => {
         className="w-full lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0"
         data-aos="fade-left"
       >
-        <h1 className="text-4xl sm:text-6xl font-bold animate-fadeIn mb-4">
+        <h1 className="text-4xl sm:text-6xl font-extrabold animate-fadeIn mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-pink-500">
           {greeting}, I'm Sujal Soni
         </h1>
         <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto lg:mx-0 mb-4">

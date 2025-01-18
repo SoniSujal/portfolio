@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaGithub } from 'react-icons/fa'; // GitHub icon
 
 const AcademicProjects = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const AcademicProjects = () => {
         "React.js for dynamic content rendering and user interface updates."
       ],
       githubLink: "https://github.com/SoniSujal/Expense-Tracker",
+      icon: <FaGithub />, // Add GitHub icon to the project
     },
     {
       title: "Travell-Management",
@@ -27,9 +29,8 @@ const AcademicProjects = () => {
         "Visually appealing layouts and enhanced user experience."
       ],
       githubLink: "https://github.com/SoniSujal/Travell-Management",
+      icon: <FaGithub />, // Add GitHub icon to the project
     },
-    
-    // Add more projects here
   ];
 
   return (
@@ -53,11 +54,12 @@ const AcademicProjects = () => {
             </ul>
             <a
               href={project.githubLink}
-              className="text-blue-500 mt-4 inline-block hover:text-blue-700 transition duration-300"
+              className="mt-4 flex items-center justify-center text-white py-2 px-6 rounded-lg bg-blue-500 hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-github mr-2"></i> View Code on GitHub
+              {project.icon}
+              <span className="ml-2">View Code on GitHub</span>
             </a>
           </div>
         ))}
